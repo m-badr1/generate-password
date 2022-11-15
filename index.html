@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="h2">
+            <h2>Password Generator</h2>
+        </div>
+        <!-- error msg -->
+        <h3></h3>
+        <!-- end of error msg -->
+        <form action="">
+            <div class="inpu">
+                <input type="text" id="allpess" >
+                <div id="copy" onclick="copy()">
+                    <i class="fa-regular fa-copy"></i>
+                    <p>copy</p>
+                </div>
+            </div>
+            <div>
+                <label for="">password Lentgh</label>
+                <input type="text" id="passlenth" value="4">
+            </div>
+            <div class="box">
+                <label for="">Capital Letters</label>
+                <input type="checkbox" id="capitalLett" checked>
+            </div>
+            <div class="box">
+                <label for="">small Letters</label>
+                <input type="checkbox" id="smallLett">
+            </div>
+            <div class="box">
+                <label for="">Number</label>
+                <input type="checkbox" id="number">
+            </div>
+            <div class="box">
+                <label for="">symbols</label>
+                <input type="checkbox" id="symbols">
+            </div>
+            <div class="button">
+                <button type="button" onclick="generatepassword()">Generate Password</button>
+            </div>
+        </form>
+
+    </header>
+
+
+    <script src="Main.js"></script>
+</body>
+</html>
